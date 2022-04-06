@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>DICE GAME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="text-center"> <button type="button" class="btn btn-outline-primary btn-lg" id="BtnNewGame"> START A NEW GAME </button> </h1>
+
+<!-- Creation of responsive game tableboard -->
+<div class="container ">
+  <div class="row row-cols-1 row-cols-md-3">
+
+<!-- START BLOC DE 1ER JOUEUR -->
+
+    <!-- 1st column from grid system -->
+    <div class="col player1">
+
+<!-- Creation of 1st player using bootstrap card component -->
+    <div class="card text-center" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">PLAYER 1</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+
+        <li class="list-group-item dice"><i class="bi bi-question-square"></i></li>
+        <li class="list-group-item round"></li>
+        <li class="list-group-item partie"></li>
+        <li class="list-group-item"> <button type="button" class="btn btn-outline-danger btn-block invisible" id="BtnRollDiceP1">Lancer le dé</button></li>
+        <li class="list-group-item"> <button type="button" class="btn btn-outline-info btn-block invisible" id="BtnEndRoundP1">Arrêter pour ce round</button></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- END BLOC DE 1ER JOUEUR -->
+
+<!-- START BLOC DE 2ND JOUEUR -->
+
+<!-- 2nc colum from grid system  -->
+    <div class="col player2">
+      <!-- START Creation of 2nd player using bootstrap card component -->
+      <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">PLAYER 2</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+  
+          <li class="list-group-item dice"><i class="bi bi-question-square"></i></li>
+          <li class="list-group-item round"></li>
+          <li class="list-group-item partie"></li>
+          <li class="list-group-item"> <button type="button" class="btn btn-outline-danger btn-block invisible" id="BtnRollDiceP2">Lancer le dé</button></li>
+          <li class="list-group-item"> <button type="button" class="btn btn-outline-info btn-block invisible" id="BtnEndRoundP2">Arrêter pour ce round</button></li>
+        </ul>
+      </div>
+    </div>
+<!-- END BLOC DE 2ND JOUEUR -->
+
+<!-- START BLOC REGLE DU JEU -->
+<div class="col">
+  <!-- START Creation of 2nd player using bootstrap card component -->
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center">REGLES DU JEU</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+
+      <li class="list-group-item text-center"><i class="bi bi-file-earmark-text black"></i></li>
+      <li class="list-group-item">
+        <p>
+          BUT DU JEU : <br> Etre le premier joueur a dépasser les 100 points.
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+TOUR DE JEU : <br>
+Le joueur dont c'est le tour peut choisir l'une ou l'autre de ces 2 actions : <br>
+LANCER LE DE : <br>
+Si le résultat du dé est différent de 1, la valeur du dé est ajouté au score du round du joueur. Le tour reste à ce joueur. Si le résultat du dé est 1, son score de round passe à 0 et la main passe à l'autre joueur. <br>
+TERMINER SON TOUR : <br>
+Le score du round est ajouté à son score de la partie. Si le score du joueur dépasse 100, il gagne la partie, sinon la main passe au joueur suivant.
+        </p>
+      </li>
+     
+    </ul>
+  </div>
+</div>
+<!-- END BLOC REGLE DU JEU -->
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
