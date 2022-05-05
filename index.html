@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 class="text-center"> <button type="button" class="btn btn-outline-primary btn-lg" id="BtnNewGame"> START A NEW GAME </button> </h1>
+<h1 class="text-center"> <button type="button" class="btn btn-outline-primary btn-lg m-3" id="BtnNewGame"> START A NEW GAME </button> </h1>
 
 <!-- Creation of responsive game tableboard -->
 <div class="container ">
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row">
+  <!-- <div class="row row-cols-1 row-cols-sm-2"> -->
 
 <!-- START BLOC DE 1ER JOUEUR -->
 
@@ -19,8 +20,8 @@
     <div class="col player1">
 
 <!-- Creation of 1st player using bootstrap card component -->
-    <div class="card text-center" style="width: 18rem;">
-      <div class="card-body">
+    <div class="card text-center m-3" style="width: 18rem;">
+      <div class="card-body pb-0">
         <h5 class="card-title">PLAYER 1</h5>
       </div>
       <ul class="list-group list-group-flush">
@@ -41,8 +42,8 @@
 <!-- 2nc colum from grid system  -->
     <div class="col player2">
       <!-- START Creation of 2nd player using bootstrap card component -->
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
+      <div class="card text-center m-3" style="width: 18rem;">
+        <div class="card-body pb-0">
           <h5 class="card-title">PLAYER 2</h5>
         </div>
         <ul class="list-group list-group-flush">
@@ -56,13 +57,13 @@
       </div>
     </div>
 <!-- END BLOC DE 2ND JOUEUR -->
-
+<div class="row "></div>
 <!-- START BLOC REGLE DU JEU -->
 <div class="col">
-  <!-- START Creation of 2nd player using bootstrap card component -->
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title text-center">REGLES DU JEU</h5>
+  <!-- START Creation of game rules using bootstrap card component -->
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-body pb-0">
+      <h5 class="card-title text-center ">REGLES DU JEU</h5>
     </div>
     <ul class="list-group list-group-flush">
 
@@ -85,6 +86,7 @@ Le score du round est ajouté à son score de la partie. Si le score du joueur d
      
     </ul>
   </div>
+</div>
 </div>
 <!-- END BLOC REGLE DU JEU -->
 
